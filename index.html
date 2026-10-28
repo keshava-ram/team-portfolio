@@ -4,132 +4,179 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Meet the Collective team and explore each member's work." />
-  <meta name="theme-color" content="#08090b" />
-  <title>Collective — Team Portfolio</title>
+  <meta name="description" content="Alex Morgan — full-stack developer portfolio." />
+  <title>Alex Morgan — Developer Portfolio</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <!-- Decorative background only -->
   <div class="ambient ambient-one" aria-hidden="true"></div>
   <div class="ambient ambient-two" aria-hidden="true"></div>
-  <a class="skip-link" href="#main-content">Skip to content</a>
 
+  <!-- Header / Navigation -->
   <header class="site-header">
     <nav class="nav container" aria-label="Main navigation">
-      <a class="brand" href="index.html" aria-label="Collective home">CO<span>.</span></a>
-      <button class="menu-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="nav-links">
+      <a class="brand" href="#home" aria-label="Alex Morgan home">AM<span>.</span></a>
+      <button class="menu-toggle" aria-label="Open navigation menu" aria-expanded="false" aria-controls="nav-links">
         <span></span><span></span>
       </button>
       <div class="nav-links" id="nav-links">
-        <a href="#team">Team</a>
-        <a href="#about">About</a>
-        <a href="#contact">Contact</a>
+        <a href="#about">About</a><a href="#projects">Projects</a><a href="#journey">Journey</a><a href="#contact">Contact</a><a href="Keshavaram C N _ Portfolio.html">Keshavaram's Portfolio</a>
       </div>
-      <a class="nav-cta" href="#contact">Get in touch <span aria-hidden="true">↗</span></a>
+      <a class="nav-cta" href="#contact">Let's talk <span aria-hidden="true">↗</span></a>
     </nav>
   </header>
 
-  <main id="main-content">
-    <section class="team-hero container section">
-      <p class="eyebrow reveal"><span class="status-dot"></span> Three minds, one collective</p>
-      <h1 class="reveal">People who turn ideas<br />into <em>possibility.</em></h1>
-      <p class="hero-intro reveal">
-        We are an aspiring developer collective, learning in public and creating one meaningful project at a time.
-      </p>
-    </section>
-
-    <section class="container section team-directory" id="team" aria-labelledby="team-title">
-      <div class="section-heading reveal">
-        <div>
-          <p class="eyebrow">The team</p>
-          <h2 id="team-title">Meet the builders.</h2>
+  <main id="home">
+    <!-- Hero / Bio -->
+    <section class="hero container section">
+      <div class="hero-copy reveal">
+        <p class="eyebrow"><span class="status-dot"></span> Available for select projects</p>
+        <h1>Building useful digital<br /><em>experiences.</em></h1>
+        <p class="hero-intro">Hi, I’m Alex — a full-stack developer who turns curious ideas into thoughtful, accessible web products.</p>
+        <div class="hero-actions"><a class="button button-primary" href="#projects">See my work <span aria-hidden="true">↓</span></a><a class="button button-primary" href="Keshavaram C N _ Portfolio.html">Keshavaram's Portfolio <span aria-hidden="true">↗</span></a><a class="button button-text" href="#contact">Start a conversation <span aria-hidden="true">→</span></a></div>
+      </div>
+      <aside class="profile-card reveal" aria-label="Alex Morgan profile">
+        <div class="profile-card-top"><span class="code-label">01 / PROFILE</span><span class="online">ONLINE</span></div>
+        <div class="avatar" aria-label="Profile image placeholder">AM</div>
+        <div><h2>Alex Morgan</h2><p>Full-stack developer</p></div>
+        <div class="profile-socials">
+          <a href="https://github.com/" target="_blank" rel="noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+          <a href="https://linkedin.com/" target="_blank" rel="noreferrer">LinkedIn <span aria-hidden="true">↗</span></a>
+          <a href="mailto:alex@example.com">Email <span aria-hidden="true">↗</span></a>
         </div>
-        <p class="directory-note">Select a profile to explore their work.</p>
-      </div>
+      </aside>
+    </section>
 
-      <div class="member-grid">
-        <a class="member-card member-kushal reveal" href="kushal.html" aria-label="Open Kushal Arvind O portfolio">
-          <div class="member-index">01</div>
-          <div class="member-avatar">KA</div>
-          <div class="member-content">
-            <p class="project-type">Student · RVCE</p>
-            <h3>Kushal<br />Arvind O</h3>
-            <p>Computer Science student, curious builder, and creator of Dino Screen.</p>
-            <span class="member-link">View profile <b aria-hidden="true">↗</b></span>
-          </div>
-        </a>
+    <!-- Skills -->
+    <section class="container skills-strip reveal" id="about" aria-labelledby="skills-title">
+      <p class="section-label" id="skills-title">Tools I reach for</p>
+      <div class="skill-list"><span>Python</span><span>JavaScript</span><span>TypeScript</span><span>React</span><span>HTML / CSS</span><span>Git</span><span>PostgreSQL</span></div>
+    </section>
 
-        <a class="member-card member-template reveal" href="#contact" aria-label="Contact Kesahavaram">
-          <div class="member-index">02</div>
-          <div class="member-avatar">KE</div>
-          <div class="member-content">
-            <p class="project-type">Team member</p>
-            <h3>Kesahavaram</h3>
-            <p>Explore the work and ideas coming from another member of our collective.</p>
-            <span class="member-link">Contact the team <b aria-hidden="true">↗</b></span>
-          </div>
-        </a>
-
-        <!-- Akhilesh's personal portfolio -->
-        <a class="member-card member-akhilesh reveal" href="akhilesh.html" aria-label="Open Akhilesh's personal portfolio">
-          <div class="member-index">03</div>
-          <div class="member-avatar">AK</div>
-          <div class="member-content">
-            <p class="project-type">Computer Science · Developer</p>
-            <h3>Akhilesh</h3>
-            <p>Student developer exploring web development, AI-powered tools, and useful digital products.</p>
-            <span class="member-link">View portfolio <b aria-hidden="true">↗</b></span>
-          </div>
-        </a>
+    <!-- Projects -->
+    <section class="container section projects" id="projects" aria-labelledby="projects-title">
+      <div class="section-heading reveal"><div><p class="eyebrow">Selected work</p><h2 id="projects-title">A few things I’ve<br />made with care.</h2></div><a class="text-link" href="#contact">Have a project in mind? <span aria-hidden="true">→</span></a></div>
+      <div class="project-grid">
+        <article class="project-card feature reveal"><div class="project-number">01</div><div class="project-visual visual-orbit" aria-hidden="true"><div class="orbit"><i></i><b></b></div><span>ORBIT</span></div><div class="project-content"><p class="project-type">Web application</p><h3>Orbit Finance</h3><p>A calmer way for freelancers to track invoices, income, and the bigger financial picture.</p><div class="tags"><span>React</span><span>TypeScript</span><span>Supabase</span></div><a href="#contact" class="project-link">View case study <span aria-hidden="true">↗</span></a></div></article>
+        <article class="project-card reveal"><div class="project-number">02</div><div class="project-visual visual-frame" aria-hidden="true"><div class="frame-window"><span></span><span></span><span></span><div></div></div></div><div class="project-content"><p class="project-type">Design system</p><h3>Form & Function</h3><p>A flexible component system created for a growing digital studio.</p><div class="tags"><span>Figma</span><span>Storybook</span><span>CSS</span></div><a href="#contact" class="project-link">View case study <span aria-hidden="true">↗</span></a></div></article>
+        <article class="project-card reveal"><div class="project-number">03</div><div class="project-visual visual-pulse" aria-hidden="true"><div class="pulse-line"></div><span>PULSE / 2024</span></div><div class="project-content"><p class="project-type">Data visualization</p><h3>Pulse Report</h3><p>An editorial platform that makes complex climate data feel clear and human.</p><div class="tags"><span>Next.js</span><span>D3.js</span><span>Python</span></div><a href="#contact" class="project-link">View case study <span aria-hidden="true">↗</span></a></div></article>
       </div>
     </section>
 
-    <section class="container about-band reveal" id="about">
-      <p class="section-label">What we value</p>
-      <p>Thoughtful engineering, continuous learning, and digital experiences that feel simple for the people using them.</p>
-    </section>
-
-    <section class="contact-section" id="contact">
-      <div class="container contact-grid">
-        <div class="reveal">
-          <p class="eyebrow">Collaborate</p>
-          <h2>Have an idea?<br /><em>Let’s talk.</em></h2>
-          <p class="contact-copy">
-            Whether it is a project, question, or new opportunity, we would love to hear from you.
-          </p>
-        </div>
-
-        <form class="contact-form reveal" id="contact-form" novalidate>
-          <div class="field">
-            <label for="name">Your name</label>
-            <input id="name" name="name" type="text" placeholder="Your name" required />
-          </div>
-          <div class="field">
-            <label for="email">Email address</label>
-            <input id="email" name="email" type="email" placeholder="you@example.com" required />
-          </div>
-          <div class="field">
-            <label for="message">Your message</label>
-            <textarea id="message" name="message" rows="4" placeholder="Tell us about your idea..." required></textarea>
-          </div>
-          <button class="button button-primary" type="submit">
-            Send message <span aria-hidden="true">→</span>
-          </button>
-          <p class="form-message" id="form-message" aria-live="polite"></p>
-        </form>
+    <!-- Experience and education -->
+    <section class="container section journey" id="journey" aria-labelledby="journey-title">
+      <div class="section-heading reveal"><div><p class="eyebrow">The path so far</p><h2 id="journey-title">Learning, shipping,<br />growing.</h2></div></div>
+      <div class="journey-grid reveal">
+        <div><p class="section-label">Experience</p><ol class="timeline"><li><span>2023 — Now</span><div><h3>Senior Developer <em>at Northstar</em></h3><p>Leading end-to-end product development for a remote-first fintech team.</p></div></li><li><span>2021 — 2023</span><div><h3>Frontend Developer <em>at Common Good</em></h3><p>Built accessible web experiences for social impact organizations.</p></div></li></ol></div>
+        <div><p class="section-label">Education</p><ol class="timeline"><li><span>2017 — 2021</span><div><h3>BSc, Computer Science</h3><p>University of Design & Technology · First Class Honours</p></div></li><li><span>Always</span><div><h3>Independent learner</h3><p>Constantly exploring new tools, systems, and ways to make the web better.</p></div></li></ol></div>
       </div>
     </section>
+
+    <!-- Contact form -->
+    <section class="contact-section" id="contact"><div class="container contact-grid"><div class="reveal"><p class="eyebrow">Get in touch</p><h2>Let’s make something<br /><em>meaningful.</em></h2><p class="contact-copy">Have an idea, a role, or just want to say hello? My inbox is open.</p><a class="email-link" href="mailto:alex@example.com">alex@example.com <span aria-hidden="true">↗</span></a></div><form class="contact-form reveal" id="contact-form" novalidate><div class="field"><label for="name">Your name</label><input id="name" name="name" type="text" placeholder="Jane Smith" required /></div><div class="field"><label for="email">Email address</label><input id="email" name="email" type="email" placeholder="jane@example.com" required /></div><div class="field"><label for="message">Your message</label><textarea id="message" name="message" rows="4" placeholder="Tell me a little about your project..." required></textarea></div><button class="button button-primary" type="submit">Send message <span aria-hidden="true">→</span></button><p class="form-message" id="form-message" aria-live="polite"></p></form></div></section>
   </main>
+  <footer class="footer container"><a class="brand" href="#home">AM<span>.</span></a><p>Designed & built with intention · 2024</p><a href="#home">Back to top ↑</a></footer>
+  <script src="script.js"></script>
+</body>
+</html>
+<html lang="en"><head><meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="description" content="Meet the team behind the work." /><title>Collective — Team Portfolio</title><link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin /><link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" /><link rel="stylesheet" href="style.css" /></head>
+<body><div class="ambient ambient-one" aria-hidden="true"></div><div class="ambient ambient-two" aria-hidden="true"></div>
+  <!-- Team site header -->
+  <header class="site-header"><nav class="nav container" aria-label="Main navigation"><a class="brand" href="index.html" aria-label="Collective home">CO<span>.</span></a><button class="menu-toggle" aria-label="Open navigation menu" aria-expanded="false" aria-controls="nav-links"><span></span><span></span></button><div class="nav-links" id="nav-links"><a href="#team">Team</a><a href="#about">About</a><a href="#contact">Contact</a></div><a class="nav-cta" href="#contact">Get in touch <span aria-hidden="true">↗</span></a></nav></header>
+  <main><section class="team-hero container section"><p class="eyebrow reveal"><span class="status-dot"></span> Three minds, one collective</p><h1 class="reveal">People who turn ideas<br />into <em>possibility.</em></h1><p class="hero-intro reveal">We are an aspiring developer collective, learning in public and creating one meaningful project at a time.</p></section>
+    <!-- Member directory: Kushal links to the complete profile; remaining cards are templates. -->
+    <section class="container section team-directory" id="team" aria-labelledby="team-title"><div class="section-heading reveal"><div><p class="eyebrow">The team</p><h2 id="team-title">Meet the builders.</h2></div><p class="directory-note">Select a profile to explore their work.</p></div><div class="member-grid">
+      <a class="member-card member-kushal reveal" href="kushal.html" aria-label="Open Kushal Arvind O portfolio"><div class="member-index">01</div><div class="member-avatar">KA</div><div class="member-content"><p class="project-type">Student · RVCE</p><h3>Kushal<br />Arvind O</h3><p>Computer Science student, curious builder, and creator of Dino Screen.</p><span class="member-link">View profile <b aria-hidden="true">↗</b></span></div></a>
+      <a class="member-card member-template reveal" href="#contact" aria-label="Kesahavaram profile template"><div class="member-index">02</div><div class="member-avatar">KE</div><div class="member-content"><p class="project-type">Member template</p><h3>Kesahavaram</h3><p>Add a role, personal introduction, and selected work to complete this profile.</p><span class="member-link">Profile coming soon <b aria-hidden="true">↗</b></span></div></a>
+      <a class="member-card member-template reveal" href="#contact" aria-label="Akhilesh profile template"><div class="member-index">03</div><div class="member-avatar">AK</div><div class="member-content"><p class="project-type">Member template</p><h3>Akhilesh</h3><p>Add a role, personal introduction, and selected work to complete this profile.</p><span class="member-link">Profile coming soon <b aria-hidden="true">↗</b></span></div></a>
+    </div></section>
+    <section class="container about-band reveal" id="about"><p class="section-label">What we value</p><p>Thoughtful engineering, continuous learning, and digital experiences that feel simple for the people using them.</p></section>
+    <section class="contact-section" id="contact"><div class="container contact-grid"><div class="reveal"><p class="eyebrow">Collaborate</p><h2>Have an idea?<br /><em>Let’s talk.</em></h2><p class="contact-copy">Whether it is a project, question, or new opportunity, we would love to hear from you.</p></div><form class="contact-form reveal" id="contact-form" novalidate><div class="field"><label for="name">Your name</label><input id="name" name="name" type="text" placeholder="Jane Smith" required /></div><div class="field"><label for="email">Email address</label><input id="email" name="email" type="email" placeholder="jane@example.com" required /></div><div class="field"><label for="message">Your message</label><textarea id="message" name="message" rows="4" placeholder="Tell us about your idea..." required></textarea></div><button class="button button-primary" type="submit">Send message <span aria-hidden="true">→</span></button><p class="form-message" id="form-message" aria-live="polite"></p></form></div></section>
+  </main><footer class="footer container"><a class="brand" href="index.html">CO<span>.</span></a><p>Team portfolio · 2026</p><a href="#top">Back to top ↑</a></footer><script src="script.js"></script></body></html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Alex Morgan — full-stack developer portfolio." />
+  <title>Alex Morgan — Developer Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Decorative background only -->
+  <div class="ambient ambient-one" aria-hidden="true"></div>
+  <div class="ambient ambient-two" aria-hidden="true"></div>
 
-  <footer class="footer container">
-    <a class="brand" href="index.html">CO<span>.</span></a>
-    <p>Team portfolio · 2026</p>
-    <a href="#main-content">Back to top ↑</a>
-  </footer>
+  <!-- Header / Navigation -->
+  <header class="site-header">
+    <nav class="nav container" aria-label="Main navigation">
+      <a class="brand" href="#home" aria-label="Alex Morgan home">AM<span>.</span></a>
+      <button class="menu-toggle" aria-label="Open navigation menu" aria-expanded="false" aria-controls="nav-links">
+        <span></span><span></span>
+      </button>
+      <div class="nav-links" id="nav-links">
+        <a href="#about">About</a><a href="#projects">Projects</a><a href="#journey">Journey</a><a href="#contact">Contact</a>
+      </div>
+      <a class="nav-cta" href="#contact">Let's talk <span aria-hidden="true">↗</span></a>
+    </nav>
+  </header>
 
+  <main id="home">
+    <!-- Hero / Bio -->
+    <section class="hero container section">
+      <div class="hero-copy reveal">
+        <p class="eyebrow"><span class="status-dot"></span> Available for select projects</p>
+        <h1>Building useful digital<br /><em>experiences.</em></h1>
+        <p class="hero-intro">Hi, I’m Alex — a full-stack developer who turns curious ideas into thoughtful, accessible web products.</p>
+        <div class="hero-actions"><a class="button button-primary" href="#projects">See my work <span aria-hidden="true">↓</span></a><a class="button button-text" href="#contact">Start a conversation <span aria-hidden="true">→</span></a></div>
+      </div>
+      <aside class="profile-card reveal" aria-label="Alex Morgan profile">
+        <div class="profile-card-top"><span class="code-label">01 / PROFILE</span><span class="online">ONLINE</span></div>
+        <div class="avatar" aria-label="Profile image placeholder">AM</div>
+        <div><h2>Alex Morgan</h2><p>Full-stack developer</p></div>
+        <div class="profile-socials">
+          <a href="https://github.com/" target="_blank" rel="noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+          <a href="https://linkedin.com/" target="_blank" rel="noreferrer">LinkedIn <span aria-hidden="true">↗</span></a>
+          <a href="mailto:alex@example.com">Email <span aria-hidden="true">↗</span></a>
+        </div>
+      </aside>
+    </section>
+
+    <!-- Skills -->
+    <section class="container skills-strip reveal" id="about" aria-labelledby="skills-title">
+      <p class="section-label" id="skills-title">Tools I reach for</p>
+      <div class="skill-list"><span>Python</span><span>JavaScript</span><span>TypeScript</span><span>React</span><span>HTML / CSS</span><span>Git</span><span>PostgreSQL</span></div>
+    </section>
+
+    <!-- Projects -->
+    <section class="container section projects" id="projects" aria-labelledby="projects-title">
+      <div class="section-heading reveal"><div><p class="eyebrow">Selected work</p><h2 id="projects-title">A few things I’ve<br />made with care.</h2></div><a class="text-link" href="#contact">Have a project in mind? <span aria-hidden="true">→</span></a></div>
+      <div class="project-grid">
+        <article class="project-card feature reveal"><div class="project-number">01</div><div class="project-visual visual-orbit" aria-hidden="true"><div class="orbit"><i></i><b></b></div><span>ORBIT</span></div><div class="project-content"><p class="project-type">Web application</p><h3>Orbit Finance</h3><p>A calmer way for freelancers to track invoices, income, and the bigger financial picture.</p><div class="tags"><span>React</span><span>TypeScript</span><span>Supabase</span></div><a href="#contact" class="project-link">View case study <span aria-hidden="true">↗</span></a></div></article>
+        <article class="project-card reveal"><div class="project-number">02</div><div class="project-visual visual-frame" aria-hidden="true"><div class="frame-window"><span></span><span></span><span></span><div></div></div></div><div class="project-content"><p class="project-type">Design system</p><h3>Form & Function</h3><p>A flexible component system created for a growing digital studio.</p><div class="tags"><span>Figma</span><span>Storybook</span><span>CSS</span></div><a href="#contact" class="project-link">View case study <span aria-hidden="true">↗</span></a></div></article>
+        <article class="project-card reveal"><div class="project-number">03</div><div class="project-visual visual-pulse" aria-hidden="true"><div class="pulse-line"></div><span>PULSE / 2024</span></div><div class="project-content"><p class="project-type">Data visualization</p><h3>Pulse Report</h3><p>An editorial platform that makes complex climate data feel clear and human.</p><div class="tags"><span>Next.js</span><span>D3.js</span><span>Python</span></div><a href="#contact" class="project-link">View case study <span aria-hidden="true">↗</span></a></div></article>
+      </div>
+    </section>
+
+    <!-- Experience and education -->
+    <section class="container section journey" id="journey" aria-labelledby="journey-title">
+      <div class="section-heading reveal"><div><p class="eyebrow">The path so far</p><h2 id="journey-title">Learning, shipping,<br />growing.</h2></div></div>
+      <div class="journey-grid reveal">
+        <div><p class="section-label">Experience</p><ol class="timeline"><li><span>2023 — Now</span><div><h3>Senior Developer <em>at Northstar</em></h3><p>Leading end-to-end product development for a remote-first fintech team.</p></div></li><li><span>2021 — 2023</span><div><h3>Frontend Developer <em>at Common Good</em></h3><p>Built accessible web experiences for social impact organizations.</p></div></li></ol></div>
+        <div><p class="section-label">Education</p><ol class="timeline"><li><span>2017 — 2021</span><div><h3>BSc, Computer Science</h3><p>University of Design & Technology · First Class Honours</p></div></li><li><span>Always</span><div><h3>Independent learner</h3><p>Constantly exploring new tools, systems, and ways to make the web better.</p></div></li></ol></div>
+      </div>
+    </section>
+
+    <!-- Contact form -->
+    <section class="contact-section" id="contact"><div class="container contact-grid"><div class="reveal"><p class="eyebrow">Get in touch</p><h2>Let’s make something<br /><em>meaningful.</em></h2><p class="contact-copy">Have an idea, a role, or just want to say hello? My inbox is open.</p><a class="email-link" href="mailto:alex@example.com">alex@example.com <span aria-hidden="true">↗</span></a></div><form class="contact-form reveal" id="contact-form" novalidate><div class="field"><label for="name">Your name</label><input id="name" name="name" type="text" placeholder="Jane Smith" required /></div><div class="field"><label for="email">Email address</label><input id="email" name="email" type="email" placeholder="jane@example.com" required /></div><div class="field"><label for="message">Your message</label><textarea id="message" name="message" rows="4" placeholder="Tell me a little about your project..." required></textarea></div><button class="button button-primary" type="submit">Send message <span aria-hidden="true">→</span></button><p class="form-message" id="form-message" aria-live="polite"></p></form></div></section>
+  </main>
+  <footer class="footer container"><a class="brand" href="#home">AM<span>.</span></a><p>Designed & built with intention · 2024</p><a href="#home">Back to top ↑</a></footer>
   <script src="script.js"></script>
 </body>
 </html>
