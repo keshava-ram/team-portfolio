@@ -1,0 +1,199 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#08090b">
+<meta name="description" content="Akhilesh — Computer Science student and developer building useful digital experiences with web technologies and AI.">
+<title>Akhilesh — Developer & Student Builder</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Mono&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#08090b;--panel:#111216;--text:#f4f2ed;--muted:#929399;--line:rgba(255,255,255,.12);--accent:#d7ff64;--font:'Manrope',sans-serif;--mono:'DM Mono',monospace}*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth;scroll-padding-top:90px}body{background:var(--bg);color:var(--text);font-family:var(--font);overflow-x:hidden}a{color:inherit;text-decoration:none}button{font:inherit}::selection{background:var(--accent);color:#111}.noise{position:fixed;inset:0;z-index:20;pointer-events:none;opacity:.035;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' fill='white' filter='url(%23n)'/%3E%3C/svg%3E")}.progress{position:fixed;top:0;left:0;width:0;height:2px;background:var(--accent);z-index:100}.cursor,.cursor-ring{position:fixed;left:0;top:0;border-radius:50%;pointer-events:none;z-index:101;transform:translate(-50%,-50%)}.cursor{width:6px;height:6px;background:var(--accent)}.cursor-ring{width:32px;height:32px;border:1px solid #d7ff6470;transition:width .25s,height .25s}.cursor-ring.hover{width:55px;height:55px}.wrap{width:min(1180px,calc(100% - 64px));margin:auto}nav{height:82px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line);position:relative;z-index:30}.brand{font-size:1.1rem;font-weight:800;letter-spacing:-.06em;display:flex;align-items:center;gap:9px}.brand-mark{width:27px;height:27px;display:grid;place-items:center;border-radius:50%;background:var(--accent);color:#111}.accent{color:var(--accent)}.nav-links{display:flex;align-items:center;gap:28px;font-size:.78rem;color:#c4c5c8}.nav-links a{transition:color .25s}.nav-links a:hover{color:var(--accent)}.nav-cta{border:1px solid var(--line);padding:11px 16px}.menu-btn{display:none;color:white;border:0;background:transparent;font-size:1.6rem;cursor:pointer}.hero{min-height:calc(100svh - 82px);display:flex;flex-direction:column;justify-content:center;padding:95px 0 55px;position:relative}.eyebrow,.kicker{font:10px var(--mono);text-transform:uppercase;letter-spacing:.13em;color:var(--accent)}.eyebrow{display:flex;align-items:center;gap:12px}.eyebrow:before{content:"";width:25px;height:1px;background:var(--accent)}.hero h1{font-size:clamp(3.5rem,9.5vw,8.8rem);line-height:.93;letter-spacing:-.095em;font-weight:600;margin:30px 0}.outline{color:transparent;-webkit-text-stroke:1px #f4f2edb0}.serif{font-family:Georgia,serif;font-weight:400;font-style:italic}.hero-stamp{position:absolute;right:4%;top:15%;width:110px;height:110px;border:1px solid var(--line);border-radius:50%;display:grid;place-items:center;text-align:center;font:8px var(--mono);letter-spacing:.1em;animation:spin 24s linear infinite}.hero-stamp span{position:absolute;font-size:2.5rem;color:var(--accent)}@keyframes spin{to{transform:rotate(360deg)}}.hero-bottom{display:flex;align-items:flex-end;justify-content:space-between;gap:30px}.hero-copy{color:#a6a7ac;line-height:1.9;max-width:470px;font-size:1rem}.hero-copy strong{color:white;font-weight:500}.actions{display:flex;flex-wrap:wrap;gap:12px}.btn{display:inline-flex;align-items:center;justify-content:space-between;gap:25px;padding:15px 18px;border:1px solid var(--line);font-size:.78rem;font-weight:700;transition:.3s}.btn:hover{transform:translateY(-3px)}.btn-primary{background:var(--accent);color:#111;border-color:var(--accent)}.btn-primary:hover{background:#e8ffad}.hero-foot{display:flex;justify-content:space-between;gap:15px;margin-top:75px;padding-top:18px;border-top:1px solid var(--line);color:#777980;font:9px var(--mono);text-transform:uppercase;letter-spacing:.08em}.pulse{display:inline-block;width:7px;height:7px;background:var(--accent);border-radius:50%;margin-right:8px;animation:pulse 2s infinite}@keyframes pulse{50%{opacity:.3}}section{padding:120px 0}.section-head{display:flex;align-items:flex-end;justify-content:space-between;gap:30px;margin-bottom:50px}.kicker{margin-bottom:18px}.section-title{font-size:clamp(2.7rem,5vw,5rem);line-height:1.02;letter-spacing:-.075em;font-weight:600}.section-note{max-width:300px;font-size:.85rem;color:var(--muted);line-height:1.9}.projects{display:grid;grid-template-columns:1fr 1fr;gap:52px 24px}.project-visual{height:clamp(260px,36vw,440px);position:relative;overflow:hidden;border:1px solid var(--line);display:block}.project-art{position:absolute;inset:0;transition:transform .8s cubic-bezier(.2,.7,.2,1)}.project:hover .project-art{transform:scale(1.045)}.project-meta{display:flex;justify-content:space-between;gap:15px;padding-top:20px}.project-meta h3{font-size:1.15rem;letter-spacing:-.04em;margin-bottom:8px}.project-meta p{font-size:.78rem;color:var(--muted);line-height:1.7}.project-index{font:10px var(--mono);color:#777;white-space:nowrap}.tags{display:flex;flex-wrap:wrap;gap:7px;margin-top:15px}.tag{font:9px var(--mono);color:#bbb;border:1px solid var(--line);padding:7px 9px;text-transform:uppercase}.art-one{background:radial-gradient(ellipse at 50% 35%,#566b4b,#1c2921 45%,#0b100d);display:grid;place-items:center}.device{width:53%;height:75%;border:5px solid #252b27;border-radius:20px;background:linear-gradient(145deg,#202c26,#0b110e);box-shadow:0 25px 80px #0009;transform:rotate(-8deg);padding:18px}.device:before{content:"";display:block;width:35%;height:5px;border-radius:9px;background:#4b524e;margin:0 auto 20px}.screen-label{font:9px var(--mono);color:#b5c8a7}.screen-big{font-size:clamp(1.5rem,3.5vw,3.3rem);letter-spacing:-.09em;line-height:.95;margin:20px 0}.screen-chart{height:25%;border-bottom:1px solid #6b7d60;margin-top:20px}.screen-chart svg{width:100%;height:100%}.art-two{background:linear-gradient(135deg,#e4dacc,#afa28d);display:grid;place-items:center}.editorial{width:75%;height:75%;background:#f4eee3;color:#1c211f;padding:8%;display:flex;flex-direction:column;justify-content:space-between;transform:rotate(4deg);transition:transform .6s;box-shadow:0 25px 65px #332b2040}.project:hover .editorial{transform:rotate(0)}.editorial .tiny{font:9px var(--mono);letter-spacing:.1em}.editorial h3{font:clamp(2.3rem,5vw,5rem)/.85 Georgia,serif;letter-spacing:-.07em}.editorial h3 i{color:#65785d}.editorial-foot{display:flex;justify-content:space-between;gap:10px;font:8px var(--mono);border-top:1px solid #bbb;padding-top:12px}.art-three{background:radial-gradient(ellipse at 50% 120%,#5945d6,#17132c 45%,#0c0b12 75%);display:grid;place-items:center}.orb{width:210px;max-width:55%;aspect-ratio:1;border-radius:50%;background:radial-gradient(circle at 32% 25%,#d5cbff,#7865e8 22%,#34218e 50%,#110c2c 72%);box-shadow:inset -20px -25px 40px #070512,0 0 80px #7d68ff40;position:relative;animation:float 6s ease-in-out infinite}.orb:before,.orb:after{content:"";position:absolute;inset:-15%;border:1px solid #a79bff70;border-radius:50%;transform:rotate(-28deg) scaleY(.28)}.orb:after{transform:rotate(52deg) scaleY(.28)}@keyframes float{50%{transform:translateY(-12px)}}.art-four{background:#d5f45c;display:grid;place-items:center;color:#171b10}.type-poster{font-size:clamp(3rem,8vw,8rem);font-weight:800;line-height:.78;letter-spacing:-.11em;transform:rotate(-8deg);text-shadow:7px 7px 0 #9bb538}.type-poster span{display:block;font-family:Georgia,serif;font-style:italic;font-weight:400;margin-left:20%}.about-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:12%;align-items:start}.about-aside{position:sticky;top:120px}.about-copy{font-size:clamp(1.35rem,2.5vw,2.3rem);line-height:1.55;letter-spacing:-.045em;color:#b4b5b9}.about-copy strong{color:white;font-weight:500}.about-copy em{color:var(--accent);font-family:Georgia,serif}.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:15px;margin-top:45px;padding-top:25px;border-top:1px solid var(--line)}.stat strong{font-size:2rem;letter-spacing:-.07em;display:block}.stat span{font:9px/1.8 var(--mono);text-transform:uppercase;color:var(--muted)}.services{border-top:1px solid var(--line)}.service-row{display:grid;grid-template-columns:60px 1fr 1.1fr 25px;gap:24px;align-items:center;padding:30px 0;border-bottom:1px solid var(--line);transition:padding .3s}.service-row:hover{padding-left:12px;padding-right:12px}.service-no{font:11px var(--mono);color:var(--accent)}.service-row h3{font-size:clamp(1.2rem,2.2vw,1.8rem);letter-spacing:-.05em;font-weight:500}.service-row p{font-size:.8rem;color:var(--muted);line-height:1.8}.service-arrow{font-size:1.4rem;transition:.25s}.service-row:hover .service-arrow{color:var(--accent);transform:translate(4px,-4px)}.contact{padding:110px 0 30px;background:var(--accent);color:#11130c}.contact .kicker{color:#39451f}.contact-layout{display:flex;justify-content:space-between;align-items:flex-end;gap:35px}.contact h2{font-size:clamp(3.3rem,8.5vw,8rem);line-height:.9;letter-spacing:-.1em;font-weight:600;margin:25px 0 30px}.contact h2 em{font-family:Georgia,serif;font-weight:400}.contact-desc{max-width:390px;font-size:.9rem;line-height:1.8;color:#414a2b;margin-bottom:35px}.contact-link{display:inline-flex;align-items:center;gap:20px;font-weight:700;border-bottom:1px solid #111;padding-bottom:10px;overflow-wrap:anywhere}.contact-link span{font-size:1.4rem;transition:transform .25s}.contact-link:hover span{transform:translate(5px,-5px)}.contact-side{max-width:220px;font:10px/2 var(--mono);color:#48502e;text-transform:uppercase}.footer{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:18px;border-top:1px solid #7e9335;padding:24px 0;margin-top:100px;font:9px var(--mono);text-transform:uppercase;color:#4a542c}.footer-links{display:flex;gap:18px}.footer a:hover{color:#000}.reveal{opacity:0;transform:translateY(28px);transition:opacity .8s ease,transform .8s cubic-bezier(.2,.7,.2,1)}.reveal.visible{opacity:1;transform:translateY(0)}.delay-1{transition-delay:.12s}.delay-2{transition-delay:.24s}.back-team{display:inline-flex;gap:8px;align-items:center;color:#b6b7bc;font-size:.75rem;border-bottom:1px solid var(--line);padding-bottom:7px;margin-top:25px}.back-team:hover{color:var(--accent)}
+@media(max-width:760px){body{cursor:auto}.cursor,.cursor-ring{display:none}.wrap{width:calc(100% - 38px)}nav{height:70px}.menu-btn{display:block}.nav-links{display:none;position:absolute;top:69px;left:-19px;right:-19px;padding:25px 20px;background:#101114;border-bottom:1px solid var(--line);flex-direction:column;align-items:stretch;gap:23px}.nav-links.open{display:flex}.nav-cta{display:none}.hero{min-height:auto;padding:95px 0 40px}.hero h1{font-size:clamp(3.5rem,14.5vw,6.5rem);margin:25px 0}.hero-stamp{width:70px;height:70px;top:30px;right:0;font-size:6px}.hero-stamp span{font-size:1.6rem}.hero-bottom{flex-direction:column;align-items:flex-start}.hero-foot{margin-top:55px;font-size:8px;flex-wrap:wrap}section{padding:82px 0}.section-head{align-items:flex-start;flex-direction:column;margin-bottom:35px}.projects{grid-template-columns:1fr;gap:38px}.project-visual{height:330px}.about-grid{grid-template-columns:1fr;gap:35px}.about-aside{position:static}.stats{gap:8px}.stat strong{font-size:1.6rem}.stat span{font-size:8px}.service-row{grid-template-columns:28px 1fr 20px;gap:13px;padding:24px 0}.service-row p{grid-column:2;grid-row:2}.service-arrow{grid-column:3;grid-row:1}.contact{padding-top:80px}.contact-layout{display:block}.contact-side{margin-top:45px}.footer{margin-top:65px}.hero-foot span{font-size:8px}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important;transition-duration:.01ms!important}.reveal{opacity:1;transform:none}.cursor,.cursor-ring{display:none}}
+</style>
+</head>
+<body>
+<div class="noise" aria-hidden="true"></div>
+<div class="progress" id="progress"></div>
+<div class="cursor" id="cursor"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+
+<div class="wrap">
+<nav aria-label="Main navigation">
+  <a class="brand" href="index.html"><span class="brand-mark">A.</span> akhilesh<span class="accent">®</span></a>
+  <button class="menu-btn" id="menuBtn" type="button" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+  <div class="nav-links" id="navLinks">
+    <a href="#work">Projects</a>
+    <a href="#about">About</a>
+    <a href="#services">Skills</a>
+    <a href="#contact" class="nav-cta">Let's connect ↗</a>
+  </div>
+</nav>
+
+<main>
+<section class="hero" id="home">
+  <div class="hero-stamp" aria-hidden="true">LEARN · BUILD · IMPROVE <span>✳</span></div>
+  <div class="eyebrow reveal">Computer Science student · Developer</div>
+  <h1 class="reveal delay-1">Building the<br><span class="outline">useful</span><br><span class="serif">and meaningful.</span></h1>
+  <div class="hero-bottom reveal delay-2">
+    <p class="hero-copy">I'm <strong>Akhilesh</strong> — a Computer Science student who enjoys turning ideas into clean, practical digital experiences. I'm exploring web development, AI, and software engineering one project at a time.</p>
+    <div class="actions">
+      <a href="#work" class="btn btn-primary magnetic">Explore my work <span>↘</span></a>
+      <a href="#contact" class="btn magnetic">Get in touch <span>↗</span></a>
+    </div>
+  </div>
+  <div class="hero-foot"><span><i class="pulse"></i>Student builder</span><span>Web · AI · Software</span><span>Scroll to explore ↓</span></div>
+  <a class="back-team" href="index.html">← Back to the Collective team page</a>
+</section>
+
+<section id="work">
+  <div class="section-head reveal">
+    <div><div class="kicker">01 / Selected work</div><h2 class="section-title">Ideas I'm<br><em class="serif">bringing to life.</em></h2></div>
+    <p class="section-note">A few project directions across campus tools, AI-assisted learning, and design thinking. Project descriptions reflect my work and concepts, not made-up client case studies.</p>
+  </div>
+  <div class="projects">
+    <article class="project reveal">
+      <a href="#contact" class="project-visual" aria-label="NEXORA AI project details">
+        <div class="project-art art-one"><div class="device"><div class="screen-label">NEXORA AI / LEARN</div><div class="screen-big">Learn<br>with a<br>direction.</div><div class="screen-chart"><svg viewBox="0 0 200 60" preserveAspectRatio="none"><path d="M0 50 C20 45 28 20 48 32 S82 55 102 25 S140 37 158 12 S182 18 200 3" fill="none" stroke="#d7ff64" stroke-width="2"/></svg></div><div class="screen-label" style="margin-top:12px">SKILLS → ROADMAP → GROWTH</div></div></div>
+      </a>
+      <div class="project-meta"><div><h3>NEXORA AI — Student growth companion</h3><p>An AI-powered concept for mapping college learning to industry skills, personalized roadmaps, practice, and placement preparation.</p><div class="tags"><span class="tag">AI concept</span><span class="tag">Career readiness</span><span class="tag">Education</span></div></div><span class="project-index">01 / 04</span></div>
+    </article>
+
+    <article class="project reveal delay-1">
+      <a href="#contact" class="project-visual" aria-label="CampusCart project details"><div class="project-art art-two"><div class="editorial"><div class="tiny">CAMPUSCART / RVCE</div><h3>Better<br>campus <i>finds.</i></h3><div class="editorial-foot"><span>STUDENT MARKETPLACE</span><span>COMMUNITY</span></div></div></div></a>
+      <div class="project-meta"><div><h3>CampusCart — Campus marketplace</h3><p>A second-hand marketplace concept designed around a student community, helping students discover and exchange useful items.</p><div class="tags"><span class="tag">Web development</span><span class="tag">Marketplace</span><span class="tag">Student life</span></div></div><span class="project-index">02 / 04</span></div>
+    </article>
+
+    <article class="project reveal">
+      <a href="#contact" class="project-visual" aria-label="FoodScan project details"><div class="project-art art-three"><div class="orb"></div><div style="position:absolute;bottom:10%;left:8%;font:10px var(--mono);color:#d8d2ff">FOODSCAN / DESIGN THINKING</div><div style="position:absolute;right:8%;top:10%;font:9px var(--mono);color:#b8afff">MAKE FOOD INFO CLEAR ↗</div></div></a>
+      <div class="project-meta"><div><h3>FoodScan — Food health analyzer</h3><p>A design-thinking project exploring how a simple food analysis experience could help people understand food choices more easily.</p><div class="tags"><span class="tag">Design thinking</span><span class="tag">Research</span><span class="tag">Prototype</span></div></div><span class="project-index">03 / 04</span></div>
+    </article>
+
+    <article class="project reveal delay-1">
+      <a href="https://github.com/Akhilesh-77" target="_blank" rel="noreferrer" class="project-visual" aria-label="Open Akhilesh's GitHub profile"><div class="project-art art-four"><div class="type-poster">CODE<span>· LEARN.</span></div><div style="position:absolute;bottom:8%;right:8%;font:9px var(--mono)">SMALL STEPS, REAL PROGRESS ↗</div></div></a>
+      <div class="project-meta"><div><h3>More experiments on GitHub</h3><p>Browse my code, learning projects, and experiments as they grow.</p><div class="tags"><span class="tag">GitHub</span><span class="tag">Learning in public</span></div></div><span class="project-index">04 / 04</span></div>
+    </article>
+  </div>
+</section>
+
+<section id="about">
+  <div class="about-grid">
+    <div class="about-aside reveal"><div class="kicker">02 / A little about me</div><h2 class="section-title">Curious by nature.<br><em class="serif">Builder by practice.</em></h2></div>
+    <div class="reveal delay-1">
+      <p class="about-copy">I'm a <strong>Computer Science student and aspiring software developer</strong> who likes understanding how things work — then using that knowledge to build something useful. My interests include <em>web development, AI tools, and thoughtful user experiences.</em><br><br>I value clear fundamentals, consistent learning, and projects that solve real problems. I'm still growing, and I want my portfolio to show that journey honestly.</p>
+      <div class="stats">
+        <div class="stat"><strong>03<span class="accent">+</span></strong><span>Project ideas<br>in progress</span></div>
+        <div class="stat"><strong>2026</strong><span>Building<br>and learning</span></div>
+        <div class="stat"><strong>∞</strong><span>Things left<br>to explore</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="services">
+  <div class="section-head reveal"><div><div class="kicker">03 / What I'm learning</div><h2 class="section-title">Strong basics.<br><em class="serif">Steady progress.</em></h2></div><p class="section-note">My current learning areas. This list is intentionally focused on skills and interests, not a claim of professional expertise.</p></div>
+  <div class="services">
+    <div class="service-row reveal"><span class="service-no">01</span><h3>Web development</h3><p>Building responsive interfaces with HTML, CSS, JavaScript, React, and Tailwind CSS.</p><span class="service-arrow">↗</span></div>
+    <div class="service-row reveal"><span class="service-no">02</span><h3>Programming fundamentals</h3><p>Strengthening problem-solving and core programming concepts through practice and projects.</p><span class="service-arrow">↗</span></div>
+    <div class="service-row reveal"><span class="service-no">03</span><h3>AI-powered products</h3><p>Exploring AI APIs and how intelligent features can support learning and everyday workflows.</p><span class="service-arrow">↗</span></div>
+    <div class="service-row reveal"><span class="service-no">04</span><h3>Product thinking</h3><p>Turning user needs into clear features, useful flows, and approachable digital experiences.</p><span class="service-arrow">↗</span></div>
+  </div>
+</section>
+</main>
+</div>
+
+<footer class="contact" id="contact">
+  <div class="wrap">
+    <div class="contact-layout">
+      <div><div class="kicker">04 / Your turn</div><h2>Have an idea?<br><em>Let's connect.</em></h2><p class="contact-desc">Have a project idea, a question, or an opportunity to collaborate? Feel free to reach out or explore my code.</p><a class="contact-link" href="mailto:akhilesh27u@gmail.com">akhilesh27u@gmail.com <span>↗</span></a></div>
+      <div class="contact-side">Computer Science student.<br><br>Learning, building, and improving one project at a time.</div>
+    </div>
+    <div class="footer"><span>© <span id="year"></span> Akhilesh</span><div class="footer-links"><a href="index.html">Team page ↗</a><a href="https://github.com/Akhilesh-77" target="_blank" rel="noreferrer">GitHub ↗</a><a href="#home">Back to top ↑</a></div><span>HTML / CSS / JS</span></div>
+  </div>
+</footer>
+
+<script>
+document.getElementById('year').textContent = new Date().getFullYear();
+
+const progress = document.getElementById('progress');
+function updateProgress() {
+  const max = document.documentElement.scrollHeight - innerHeight;
+  progress.style.width = (max > 0 ? scrollY / max * 100 : 0) + '%';
+}
+addEventListener('scroll', updateProgress, { passive: true });
+updateProgress();
+
+const revealObserver = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+      revealObserver.unobserve(entry.target);
+    }
+  });
+}, { threshold: .12, rootMargin: '0px 0px -30px 0px' });
+
+document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
+
+const cursor = document.getElementById('cursor');
+const ring = document.getElementById('cursorRing');
+
+if (matchMedia('(pointer: fine)').matches) {
+  let mx = innerWidth / 2, my = innerHeight / 2, rx = mx, ry = my;
+
+  addEventListener('mousemove', e => {
+    mx = e.clientX;
+    my = e.clientY;
+    cursor.style.left = mx + 'px';
+    cursor.style.top = my + 'px';
+  });
+
+  function animateCursor() {
+    rx += (mx - rx) * .16;
+    ry += (my - ry) * .16;
+    ring.style.left = rx + 'px';
+    ring.style.top = ry + 'px';
+    requestAnimationFrame(animateCursor);
+  }
+  animateCursor();
+
+  document.querySelectorAll('a,button').forEach(el => {
+    el.addEventListener('mouseenter', () => ring.classList.add('hover'));
+    el.addEventListener('mouseleave', () => ring.classList.remove('hover'));
+  });
+}
+
+const menuBtn = document.getElementById('menuBtn');
+const navLinks = document.getElementById('navLinks');
+
+menuBtn.addEventListener('click', () => {
+  const open = navLinks.classList.toggle('open');
+  menuBtn.setAttribute('aria-expanded', String(open));
+  menuBtn.textContent = open ? '×' : '☰';
+});
+
+document.querySelectorAll('#navLinks a').forEach(link => {
+  link.addEventListener('click', () => {
+    navLinks.classList.remove('open');
+    menuBtn.setAttribute('aria-expanded', 'false');
+    menuBtn.textContent = '☰';
+  });
+});
+
+if (matchMedia('(pointer: fine)').matches) {
+  document.querySelectorAll('.magnetic').forEach(el => {
+    el.addEventListener('mousemove', e => {
+      const r = el.getBoundingClientRect();
+      const x = e.clientX - r.left - r.width / 2;
+      const y = e.clientY - r.top - r.height / 2;
+      el.style.transform = `translate(${x * .06}px,${y * .08}px)`;
+    });
+    el.addEventListener('mouseleave', () => el.style.transform = '');
+  });
+}
+</script>
+</body>
+</html>
